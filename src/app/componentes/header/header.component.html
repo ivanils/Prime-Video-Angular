@@ -1,0 +1,46 @@
+<header class="pv-header">
+    <div class="header-wrapper">
+        <div class="header-side">
+            <div class="pv-logo header-margin ">
+                <a [routerLink]="'/'">
+                    <img src="/assets/img/prime-video-logo.png" alt="prime-video-logo" class="img-pv-logo">
+                </a>
+            </div>
+            <nav class="pv-nav">
+                <ul class="nav-ul">
+                    <li
+                    class="nav-li"
+                    [ngClass]="{'activo': li.titulo == page}"
+                    *ngFor="let li of ulNav;let i = index"
+                    >
+                        <a class="nav-a" *ngIf="li.routing" [routerLink]="li.src">{{li.titulo}}</a>
+                        <a class="nav-a" *ngIf="li.routing == false" [href]="li.src">{{li.titulo}}</a>
+                        <svg 
+                        *ngIf="li.routing == false"
+                        xmlns="http://www.w3.org/2000/svg" class="svg-flecha" viewBox="0 0 16 16">
+                        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                        </svg>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-side">
+            <div class="header-margin pv-buscador">
+                <svg xmlns="http://www.w3.org/2000/svg"  class="buscador-svg" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+            </div>
+            <div class="pv-perfil">
+                <div class="perfil-imagen">
+                    <img src="/assets/img/profile.png" class="img-perfil" alt="">
+                </div>
+                <div class="perfil-nombre">
+                    <span>Iván</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="svg-flecha" viewBox="0 0 16 16">
+                        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

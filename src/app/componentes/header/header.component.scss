@@ -1,0 +1,103 @@
+@import "src/assets/mixins";
+.pv-header{
+    width: 100%;
+    height: 5rem;
+    background-color: var(--background-header);
+    .header-wrapper{
+        width: 95%;
+        height: 100%;
+        margin: auto;
+        // background-color: beige;
+        @include flex(row, nowrap, space-between, center );
+        .header-side{
+            @include flex(row, nowrap, space-between, center );
+            .header-margin{
+                margin-right: 1rem;
+            }
+        }
+        .pv-logo{
+            height: 100%;
+            @include flex(row, nowrap, center, center);
+            .img-pv-logo{
+                width: 120px;
+            }
+        }
+        .pv-nav{
+            height: 100%;
+            // background-color: orange;
+            @include flex(row, nowrap, center, center);
+            .nav-ul{
+                width: 100%;
+                @include flex(row, nowrap, space-between, center);
+                .nav-li{
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                    margin: 0 .5rem;
+                    color: var(--gray-pv);
+                    position: relative;
+                    @include flex(row, nowrap, center, center);
+                    cursor: pointer;
+                    &:hover{
+                        color: white;
+                    }
+                    &.activo{
+                        color: white;
+                        font-weight: 800;
+                        &::after{
+                            content: '';
+                            position: absolute;
+                            width: 100%;
+                            height: 1px;
+                            background-color: white;
+                            bottom: -.4rem;
+                            left: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .pv-buscador{
+            height: 100%;
+            // background-color: maroon;
+            @include flex(row, nowrap, flex-end, center);
+            cursor: pointer;
+            &:hover{
+                .buscador-svg{
+                    fill: white;
+                }
+            }
+            .buscador-svg{
+                width: 22px;
+                fill: var(--gray-pv);
+            }
+        }
+        .pv-perfil{
+            height: 100%;
+            @include flex(row, nowrap, space-between, center);
+            cursor: pointer;
+            &:hover{
+                .perfil-nombre{
+                    color: white;
+                }
+            }
+            .perfil-imagen{
+                width: 40px;
+                .img-perfil{
+                    width: 80%;
+                }
+            }
+            .perfil-nombre{
+                flex: 1;
+                @include flex(row, nowrap, flex-start, center);
+                color: var(--gray-pv);
+                font-weight: 600;
+            }
+        }
+    }
+    .svg-flecha{
+        fill: var(--gray-pv);
+        width: 12px;
+        height: 12px;
+        margin: .5rem 0 0 .3rem;
+    }
+}
