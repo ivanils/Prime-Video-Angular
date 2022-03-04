@@ -1,0 +1,33 @@
+@import "src/assets/mixins";
+.pv-footer{
+    background-color: var(--background-main);
+    width: 100%;
+    @include flex(column, nowrap, center, center);
+    padding: 2rem 0;
+    .footer-top{
+        max-width: 100px;
+    }
+    .footer-bot{
+        @include flex( row, nowrap, space-between, center);
+        font-size: .9rem;
+        margin-top: .5rem;
+        .footer-links{
+            .footer-ul{
+                @include flex( row, nowrap, space-between, center);
+                .footer-li{
+                    color: var(--blue-links);
+                    margin: 0 .5rem;
+                    cursor: pointer;
+                    &:hover{
+                        color: var(--light-blue-links);
+                    }
+                }
+            }
+        }
+        .footer-copyright{
+            margin-left: 1rem;
+            color: var(--medium-gray-pv);
+        }
+        
+    }
+}

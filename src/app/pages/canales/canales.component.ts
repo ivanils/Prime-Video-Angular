@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./canales.component.scss']
 })
 export class CanalesComponent implements OnInit {
-
+  page : string = 'Canales'
   constructor() { }
 
   ngOnInit(): void {

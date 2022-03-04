@@ -12,6 +12,8 @@
                     class="nav-li"
                     [ngClass]="{'activo': li.titulo == page}"
                     *ngFor="let li of ulNav;let i = index"
+                    routerLinkActive="activo" 
+                    [routerLinkActiveOptions]="{ exact: true }"
                     >
                         <a class="nav-a" *ngIf="li.routing" [routerLink]="li.src">{{li.titulo}}</a>
                         <a class="nav-a" *ngIf="li.routing == false" [href]="li.src">{{li.titulo}}</a>

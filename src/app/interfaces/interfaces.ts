@@ -1,5 +1,5 @@
-export interface UlNav{
+export interface ListaUrl{
     titulo  : string,
     src     : string,
-    routing : boolean
+    routing?: boolean
 }

@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { UlNav } from 'src/app/interfaces/interfaces';
+import { Component, Input, OnInit } from '@angular/core';
+import { ListaUrl} from 'src/app/interfaces/interfaces';
 
 @Component({
   selector: 'app-header',
@@ -7,7 +7,7 @@ import { UlNav } from 'src/app/interfaces/interfaces';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  ulNav : Array<UlNav> = [
+  ulNav : Array<ListaUrl> = [
     {
       titulo : "Inicio",
       src    : "/",
@@ -34,7 +34,7 @@ export class HeaderComponent implements OnInit {
       routing: true
     },
   ]
-  page : string = 'Inicio'
+  @Input() page : string = ''
   constructor() { }
 
   ngOnInit(): void {

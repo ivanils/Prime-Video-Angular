@@ -1,1 +1,20 @@
-<p>footer works!</p>
+<div class="pv-footer">
+    <div class="footer-top">
+        <img src="/assets/img/prime-video-logo.png" alt="" class="footer-top-img">
+    </div>
+    <div class="footer-bot">
+        <div class="footer-links">
+            <ul class="footer-ul">
+                <li class="footer-li"
+                    *ngFor="let li of listaFooter, let i = index"
+                >
+                    <a [routerLink]="li.src" class="a-footer-li">{{li.titulo}}</a>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="footer-copyright">
+            <span>©1996-2022, Amazon.com, Inc. o sus filiales</span>
+        </div>
+    </div>
+</div>
