@@ -56,6 +56,90 @@ export class HeaderComponent implements OnInit {
       src    : "#infantil"
     },
   ]
+  ulGeneros : Array<ListaUrl> = [
+    {
+      titulo : "Acción y aventuras",
+      src    : "#accion"
+    },
+    {
+      titulo : "Romance",
+      src    : "#romance"
+    },
+    {
+      titulo : "Comedia",
+      src    : "#comedia"
+    },
+    {
+      titulo : "Ciencia ficción",
+      src    : "cienciaficcion"
+    },
+    {
+      titulo : "Drama",
+      src    : "#drama"
+    },
+    {
+      titulo : "Suspense",
+      src    : "#suspense"
+    },
+    {
+      titulo : "Documental",
+      src    : "#documental"
+    },
+    {
+      titulo : "Anime",
+      src    : "#anime"
+    },
+    {
+      titulo : "Infantil y familiar",
+      src    : "#infantil"
+    },
+    {
+      titulo : "Acción militar y guerra",
+      src    : "#guerra"
+    },
+    {
+      titulo : "Fantasía",
+      src    : "#fantasia"
+    },
+    {
+      titulo : "Deportes",
+      src    : "#deportes"
+    },
+    {
+      titulo : "Terror",
+      src    : "#terror"
+    },
+    {
+      titulo : "Crimen y policíaco",
+      src    : "#crimen"
+    }
+  ]
+  ulOtras : Array<ListaUrl> = [
+    {
+      titulo : "Películas añadidas recientemente",
+      src    : "#peliculasanadidas"
+    },
+    {
+      titulo : "Series añadidas recientemente",
+      src    : "#seriesanadidas"
+    },
+    {
+      titulo : "Títulos galardonados",
+      src    : "#galardonados"
+    },
+    {
+      titulo : "Video Grupal",
+      src    : "#grupal"
+    },
+    {
+      titulo : "Producido en europa",
+      src    : "#europa"
+    },
+    {
+      titulo : "Solo por tiempo limitado en Prime",
+      src    : "#tiempolimitado"
+    }
+  ]
   @Input() page : string = ''
   constructor() { }
 
