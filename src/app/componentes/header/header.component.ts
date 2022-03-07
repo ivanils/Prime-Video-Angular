@@ -34,6 +34,28 @@ export class HeaderComponent implements OnInit {
       routing: true
     },
   ]
+  ulCategorias : Array<ListaUrl> = [
+    {
+      titulo : "Se incluye con Prime",
+      src    : "#prime"
+    },
+    {
+      titulo : "Amazon Originals y Exclusivos",
+      src    : "#originals"
+    },
+    {
+      titulo : "Películas",
+      src    : "#peliculas"
+    },
+    {
+      titulo : "Series",
+      src    : "#series"
+    },
+    {
+      titulo : "Infantil",
+      src    : "#infantil"
+    },
+  ]
   @Input() page : string = ''
   constructor() { }
 
