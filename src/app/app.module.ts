@@ -12,6 +12,7 @@ import { InicioComponent } from './pages/inicio/inicio.component';
 import { TiendaComponent } from './pages/tienda/tienda.component';
 import { CanalesComponent } from './pages/canales/canales.component';
 import { MiEspacioComponent } from './pages/mi-espacio/mi-espacio.component';
+import { TarjetaSliderComponent } from './componentes/sliders/tarjeta-slider/tarjeta-slider.component';
  
 
 @NgModule({
@@ -24,7 +25,8 @@ import { MiEspacioComponent } from './pages/mi-espacio/mi-espacio.component';
     InicioComponent,
     TiendaComponent,
     CanalesComponent,
-    MiEspacioComponent
+    MiEspacioComponent,
+    TarjetaSliderComponent
   ],
   imports: [
     BrowserModule,

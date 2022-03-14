@@ -1,1 +1,8 @@
-<p>slider-regular works!</p>
+<p>{{titulo}}</p>
+<p>{{cuantosVeo}}</p>
+<p>{{tituloEnlace}}</p>
+<p>{{enlace}}</p>
+<!-- <p>{{contenido | json }}</p> -->
+<app-tarjeta-slider
+*ngFor="let info of contenido"
+[info]="info"></app-tarjeta-slider>

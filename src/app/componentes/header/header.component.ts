@@ -26,13 +26,14 @@ export class HeaderComponent implements OnInit {
     {
       titulo : "Categorías",
       src    : "#",
-      routing: false
+      routing: false,
+      categorias : true
     },
     {
       titulo : "Mi espacio",
       src    : "/miespacio",
       routing: true
-    },
+    }
   ]
   ulCategorias : Array<ListaUrl> = [
     {
@@ -140,6 +141,7 @@ export class HeaderComponent implements OnInit {
       src    : "#tiempolimitado"
     }
   ]
+
   @Input() page : string = ''
   constructor() { }
 

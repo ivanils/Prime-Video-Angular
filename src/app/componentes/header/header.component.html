@@ -10,12 +10,12 @@
                 <ul class="nav-ul">
                     <li
                     class="nav-li"
-                    [ngClass]="{'activo': li.titulo == page}"
+                    [ngClass]="{'activo': li.titulo == page, 'categorias' : li.categorias == true}"
                     *ngFor="let li of ulNav;let i = index"
                     routerLinkActive="activo" 
                     [routerLinkActiveOptions]="{ exact: true }"
                     >
-                        <a class="nav-a" *ngIf="li.routing" [routerLink]="li.src">{{li.titulo}}</a>
+                        <a class="nav-a"  *ngIf="li.routing" [routerLink]="li.src">{{li.titulo}}</a>
                         <a class="nav-a" *ngIf="li.routing == false" [href]="li.src">{{li.titulo}}</a>
                         <svg 
                         *ngIf="li.routing == false"

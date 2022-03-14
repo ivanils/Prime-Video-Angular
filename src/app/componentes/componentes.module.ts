@@ -6,6 +6,7 @@ import { MostViewedComponent } from './most-viewed/most-viewed.component';
 import { SliderRegularComponent } from './sliders/slider-regular/slider-regular.component';
 import { PagesModule } from '../pages/pages.module';
 import { AppRoutingModule } from '../app-routing.module';
+import { TarjetaSliderComponent } from './sliders/tarjeta-slider/tarjeta-slider.component';
 
 
 @NgModule({
@@ -13,13 +14,15 @@ import { AppRoutingModule } from '../app-routing.module';
     FooterComponent,
     HeaderComponent,
     MostViewedComponent,
-    SliderRegularComponent
+    SliderRegularComponent,
+    TarjetaSliderComponent
   ],
   exports: [
     FooterComponent,
     HeaderComponent,
     MostViewedComponent,
-    SliderRegularComponent
+    SliderRegularComponent,
+    TarjetaSliderComponent
   ],
   imports: [
     CommonModule,

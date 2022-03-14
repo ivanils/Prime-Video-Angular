@@ -1,2 +1,10 @@
-<app-slider-regular></app-slider-regular>
+<app-slider-regular
+*ngFor="let slider of sliders"
+[titulo] = "slider.titulo"
+[cuantosVeo] = "slider.cuantosVeo"
+[tituloEnlace] ="slider.tituloEnlace"
+[enlace] ="slider.enlace"
+[tituloEnlace] ="slider.tituloEnlace"
+[contenido] = "slider.contenido"
+></app-slider-regular>
 <app-most-viewed></app-most-viewed>
