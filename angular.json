@@ -112,5 +112,8 @@
       }
     }
   },
-  "defaultProject": "final_angular"
+  "defaultProject": "final_angular",
+  "cli": {
+    "analytics": false
+  }
 }
